@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements SelectableViewHol
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridLayoutManager layoutManager = new GridLayoutManager(this,3);
+        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
         recyclerView = (RecyclerView) this.findViewById(R.id.selection_list);
         recyclerView.setLayoutManager(layoutManager);
         List<Item> selectableItems = generateItems();
